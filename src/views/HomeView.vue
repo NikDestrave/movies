@@ -43,6 +43,7 @@ const sortingValue = ref(0);
 
 const sortedMovies = computed(() => {
   const sorted = movies.value.map(obj => Object.assign({}, obj));
+  console.log(sorted);
   switch (Number(sortingValue.value)) {
     case 0:
       return sorted.sort((a, b) => b.year - a.year);

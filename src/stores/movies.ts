@@ -1,4 +1,5 @@
 import { defineStore } from 'pinia'
+import mockData from '@/mock/movies.json';
 
 export interface Movie {
   id: number;
@@ -14,7 +15,11 @@ const STORAGE_KEY = 'movie-collection';
 
 function loadMovies(): Movie[] {
   const storedMovies = localStorage.getItem(STORAGE_KEY);
-  return storedMovies ? JSON.parse(storedMovies) : [];
+  if (storedMovies) return JSON.parse(storedMovies) as Movie[];
+  else {
+    saveMovies(mockData);
+    return mockData;
+  }
 }
 
 function saveMovies(movies: Movie[]) {
