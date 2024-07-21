@@ -1,0 +1,23 @@
+@import './base.css';
+
+#app {
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 2rem 0;
+  font-weight: normal;
+  height: 100dvh;
+}
+
+a,
+.green {
+  text-decoration: none;
+  transition: 0.4s;
+  padding: 3px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
