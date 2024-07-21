@@ -1,5 +1,7 @@
 # movies
 
+[DEMO](https://movies-969bc.web.app)
+
 ## Project Setup
 
 ```sh
