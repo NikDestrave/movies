@@ -8,9 +8,9 @@
       <UISelect
         v-model="sortingValue"
         :options="[
-          {label: 'По дате', value: 0},
-          {label: 'По названию', value: 1},
-          {label: 'По рейтингу', value: 2},
+          {label: 'By date', value: 0},
+          {label: 'By name', value: 1},
+          {label: 'By rating', value: 2},
         ]"
       />
     </div>
@@ -23,7 +23,13 @@
             <IStarSolid v-for="item in movie.rating" :key="item" />
           </p>
         </div>
-        <img v-if="movie.imageUrl" :src="movie.imageUrl" alt="movie image" class="movie-card__image" @error="onImageError" />
+        <img
+          v-if="movie.imageUrl"
+          :src="movie.imageUrl"
+          alt="movie image"
+          class="movie-card__image"
+          @error="onImageError"
+        />
       </router-link>
     </div>
   </div>
