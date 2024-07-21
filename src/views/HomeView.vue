@@ -174,4 +174,20 @@ const onImageError = (event: Event) => {
     }
   }
 }
+
+@media (max-width: 768px) {
+  .movie-collection__header {
+    flex-direction: column;
+
+    .movie-collection__title {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+    }
+  }
+}
 </style>
