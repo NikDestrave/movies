@@ -101,56 +101,56 @@ const onImageError = (event: Event) => {
     z-index: -1;
     opacity: 0.05;
   }
-}
 
-.movie-details__title {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  font-weight: 800;
-}
+  &__title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 800;
+  }
 
-.movie-details__year,
-.movie-details__genre,
-.movie-details__rating,
-.movie-details__description {
-  margin-bottom: 1rem;
-}
+  &__year,
+  &__genre,
+  &__rating,
+  &__description {
+    margin-bottom: 1rem;
+  }
 
-.movie-details__edit-link {
-  display: inline-block;
-  margin-right: 1rem;
-  color: #007bff;
-  text-decoration: none;
-  background-color: transparent;
-  font-weight: 600;
-}
+  &__edit-link {
+    display: inline-block;
+    margin-right: 1rem;
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+    font-weight: 600;
+  }
 
-.movie-details__edit-link:hover {
-  text-decoration: underline;
-}
+  &__edit-link:hover {
+    text-decoration: underline;
+  }
 
-.movie-details__delete-button {
-  padding: 0.8rem 1.2rem;
-  border: none;
-  background-color: #ef4444;
-  color: white;
-  border-radius: 0.5rem;
-  transition: background-color 0.3s;
-  cursor: pointer;
-  font-weight: 600;
-}
+  &__delete-button {
+    padding: 0.8rem 1.2rem;
+    border: none;
+    background-color: #ef4444;
+    color: white;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    font-weight: 600;
+  }
 
-.movie-details__delete-button:hover {
-  background-color: #f87171;
+  &__delete-button:hover {
+    background-color: #f87171;
+  }
 }
 
 @media (max-width: 768px) {
   .movie-details {
     flex-direction: column;
-  }
 
-  .movie-details__image {
-    width: 100%;
+    &__image {
+      width: 100%;
+    }
   }
 }
 </style>
