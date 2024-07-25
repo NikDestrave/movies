@@ -101,69 +101,69 @@ const submitForm = () => {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .movie-form {
   max-width: 500px;
   margin: 0 auto;
-}
 
-.movie-form__title {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
+  &__title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
 
-.movie-form__form {
-  display: flex;
-  flex-direction: column;
-}
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
 
-.movie-form__field {
-  margin-bottom: 1rem;
-}
+  &__field {
+    margin-bottom: 1rem;
+  }
 
-.movie-form__label {
-  display: block;
-  margin-bottom: 0.5rem;
-}
+  &__label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
 
-.movie-form__input,
-.movie-form__textarea {
-  width: 100%;
-  padding: 0.5rem;
-  background-color: #0f172a;
-  border: 1px solid #1e293b;
-  border-radius: 4px;
-  outline: #1e293b;
-  color: #fff;
-}
+  &__input,
+  &__textarea {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #0f172a;
+    border: 1px solid #1e293b;
+    border-radius: 4px;
+    outline: #1e293b;
+    color: #fff;
+  }
 
-.movie-form__input.error,
-.movie-form__textarea.error {
-  border-color: #f87171;
+  &__input.error,
+  &__textarea.error {
+    border-color: #f87171;
+  }
+
+  &__textarea {
+    height: 100px;
+    resize: vertical;
+  }
+
+  &__button {
+    padding: 0.6rem 1rem;
+    border: none;
+    background-color: #007bff;
+    transition: background-color 0.3s;
+    color: white;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-weight: 600;
+  }
+
+  &__button:hover {
+    background-color: #0056b3;
+  }
 }
 
 .error {
   color: #f87171;
   font-size: 0.875rem;
-}
-
-.movie-form__textarea {
-  height: 100px;
-  resize: vertical;
-}
-
-.movie-form__button {
-  padding: 0.6rem 1rem;
-  border: none;
-  background-color: #007bff;
-  transition: background-color 0.3s;
-  color: white;
-  border-radius: 0.5rem;
-  cursor: pointer;
-  font-weight: 600;
-}
-
-.movie-form__button:hover {
-  background-color: #0056b3;
 }
 </style>
